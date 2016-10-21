@@ -1,5 +1,5 @@
 require 'sinatra'
 
-get '/' do
-    
+get '/sala' do
+    erb :sala
 end

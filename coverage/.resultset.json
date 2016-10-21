@@ -1,0 +1,71 @@
+{
+  "Cucumber Features": {
+    "coverage": {
+      "/home/vagrant/3N/app.rb": [
+        1,
+        null,
+        1,
+        2,
+        null
+      ],
+      "/home/vagrant/3N/features/step_definitions/black_jack_steps.rb": [
+        1,
+        2,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        3,
+        3,
+        null,
+        null,
+        null
+      ],
+      "/home/vagrant/3N/features/step_definitions/template_steps.rb": [
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        0,
+        null,
+        0,
+        0,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1477072761
+  }
+}
