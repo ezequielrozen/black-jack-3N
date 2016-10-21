@@ -1,8 +1,11 @@
 #cartas-1 {
-	width: 40%;
+	width: 70%;
 	margin-bottom: 30px;
 }
-
+#cartas-2 {
+	width: 70%;
+	margin-bottom: 30px;
+}
 .carta {
 	width: 150px;
 	height: 200px;
@@ -11,4 +14,15 @@
 	margin-right: 10px;
 	background-color: green;
 	font-size: 50px;
+}
+
+.fondo {
+	background-color: green;
+	width: 90%;
+	height: auto;
+}
+
+.resultado {
+	width: 25%;
+	font-size: 35px;
 }
