@@ -96,3 +96,11 @@ D, [2016-10-21T20:50:30.036867 #5640] DEBUG -- : REQUESTING PAGE: GET /sala with
 D, [2016-10-21T20:50:30.053685 #5640] DEBUG -- : REQUESTING PAGE: GET /sala with {} and HTTP headers {}
 D, [2016-10-21T20:50:30.058242 #5640] DEBUG -- : REQUESTING PAGE: GET /sala with {} and HTTP headers {}
 D, [2016-10-21T20:50:30.062398 #5640] DEBUG -- : REQUESTING PAGE: GET /sala with {} and HTTP headers {}
+D, [2016-10-21T20:57:08.920754 #6043] DEBUG -- : REQUESTING PAGE: GET /sala with {} and HTTP headers {}
+D, [2016-10-21T20:57:08.996409 #6043] DEBUG -- : REQUESTING PAGE: GET /sala with {} and HTTP headers {}
+D, [2016-10-21T20:57:09.002229 #6043] DEBUG -- : REQUESTING PAGE: GET /sala with {} and HTTP headers {}
+D, [2016-10-21T20:57:09.017933 #6043] DEBUG -- : REQUESTING PAGE: GET /sala with {} and HTTP headers {}
+D, [2016-10-21T21:01:31.930694 #6067] DEBUG -- : REQUESTING PAGE: GET /sala with {} and HTTP headers {}
+D, [2016-10-21T21:01:31.944766 #6067] DEBUG -- : REQUESTING PAGE: GET /sala with {} and HTTP headers {}
+D, [2016-10-21T21:01:31.950301 #6067] DEBUG -- : REQUESTING PAGE: GET /sala with {} and HTTP headers {}
+D, [2016-10-21T21:01:31.955832 #6067] DEBUG -- : REQUESTING PAGE: GET /sala with {} and HTTP headers {}
