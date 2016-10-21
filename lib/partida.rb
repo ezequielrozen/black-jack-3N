@@ -27,4 +27,8 @@ class Partida
 	def cantCartasMazo
 		@mazo.cantCartas
 	end
+
+	def getJugador
+		@jugador
+	end
 end
