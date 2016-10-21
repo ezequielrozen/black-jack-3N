@@ -5,12 +5,12 @@
         1,
         null,
         1,
-        2,
+        4,
         null
       ],
       "/home/vagrant/3N/features/step_definitions/black_jack_steps.rb": [
         1,
-        2,
+        4,
         null,
         null,
         1,
@@ -28,6 +28,14 @@
         null,
         1,
         1,
+        null,
+        null,
+        null,
+        1,
+        2,
+        null,
+        2,
+        null,
         null,
         null,
         null
@@ -73,6 +81,6 @@
         null
       ]
     },
-    "timestamp": 1477074755
+    "timestamp": 1477076491
   }
 }

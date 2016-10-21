@@ -20,3 +20,11 @@ Then(/^Recibe carta 2/) do
   end
 end
 
+Then(/^Ve el boton "(.*?)"$/) do |titulo|
+    last_response.should have_xpath( "//input[@id=\"#{titulo}\"]") do |input|
+    
+    input.should be
+  end
+end
+
+
