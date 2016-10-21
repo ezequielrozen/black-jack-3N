@@ -20,4 +20,11 @@ class Partida
 		@jugador.pedirCarta(@mazo.repartirCarta)
 	end
 
+	def resetear
+		@mazo = Mazo.new
+	end
+
+	def cantCartasMazo
+		@mazo.cantCartas
+	end
 end
