@@ -26,3 +26,14 @@ Then(/^Ve el boton "(.*?)"$/) do |titulo|
     input.should be
   end
 end
+
+Then(/^Aprieta el boton "(.*?)"$/) do |value|
+  click_button(value)
+end
+
+Then(/^Ve la carta 3/) do
+  	last_response.should have_xpath( "//div[@id=\"carta-3\"]") do |carta|
+        carta.should be
+	end
+end
+

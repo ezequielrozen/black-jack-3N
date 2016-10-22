@@ -17,3 +17,9 @@ Scenario: La sala contiene un boton para pedir carta
 Scenario: La sala contiene un boton para plantarse
 	Given Usuario ingresa a la sala
 	Then Ve el boton "plantarse"
+
+Scenario: El jugador 1 pide una carta
+	Given Usuario ingresa a la sala
+	Then Aprieta el boton "Pedir carta"
+	And Ve la carta 3
+
