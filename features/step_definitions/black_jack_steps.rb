@@ -6,14 +6,14 @@ Then(/^Ve un titulo que dice "(.*?)"$/) do |titulo|
   last_response.body.should =~ /#{titulo}/m
 end
 
-Then(/^Recibe carta 1/) do
+Then(/^Recibe cartas el jugador 1/) do
 
   last_response.should have_xpath( "//div[@id=\"cartas-1\"]") do |div|
     div.should have_selector("div")
   end
 end
 
-Then(/^Recibe carta 2/) do
+Then(/^Recibe cartas el jugador 2/) do
 
   last_response.should have_xpath( "//div[@id=\"cartas-2\"]") do |div|
     div.should have_selector("div")
@@ -26,5 +26,3 @@ Then(/^Ve el boton "(.*?)"$/) do |titulo|
     input.should be
   end
 end
-
-

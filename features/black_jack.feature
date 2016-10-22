@@ -1,14 +1,14 @@
 Feature: Iniciar partrida para un jugador
 
-Scenario: el usuario entra a la sala y recibe una carta
+Scenario: el usuario 1 entra a la sala y recibe una carta
 	Given Usuario ingresa a la sala 
 	Then Ve un titulo que dice "Black Jack 3N"
-	And Recibe carta 1
+	And Recibe cartas el jugador 1
 
-Scenario: el usuario entra a la sala y recibe 2 cartas
-	Given Usuario ingresa a la sala	
-	Then Recibe carta 1
-	And Recibe carta 2
+Scenario: el usuario 2 entra a la sala y recibe una carta
+	Given Usuario ingresa a la sala 
+	Then Ve un titulo que dice "Black Jack 3N"
+	And Recibe cartas el jugador 2
 
 Scenario: La sala contiene un boton para pedir carta
 	Given Usuario ingresa a la sala
