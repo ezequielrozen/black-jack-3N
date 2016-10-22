@@ -1,5 +1,6 @@
-require 'mazo'
-require 'jugador'
+require './lib/jugador'
+require './lib/mazo'
+
 
 class Partida
 	

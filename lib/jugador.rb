@@ -17,7 +17,7 @@ class Jugador
 	end
 
 	def scoreJugador
-		@scoreJugador = @jugador.inject(0){|sum,x| sum + x }
+		@scoreJugador = @cartas.inject(0){|sum,x| sum + x }
 	end
 	
 	def plantarse
