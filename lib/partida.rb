@@ -9,15 +9,15 @@ class Partida
 	end
 
 	def iniciarPartida
-		@jugador = Jugador.new(@mazo.repartirCarta, @mazo.repartirCarta)
+		@jugadores = [Jugador.new(@mazo.repartirCarta, @mazo.repartirCarta), Jugador.new(@mazo.repartirCarta, @mazo.repartirCarta)]
 	end
 
-	def cartasJugador
-		@jugador.cartasJugador
+	def cartasJugador(jugadorNumero)
+		@jugadores[jugadorNumero].cartasJugador
 	end
 
-	def pedirCarta
-		@jugador.pedirCarta(@mazo.repartirCarta)
+	def pedirCarta(jugadorNumero)
+		@jugadores[jugadorNumero].pedirCarta(@mazo.repartirCarta)
 	end
 
 	def resetear
@@ -28,7 +28,11 @@ class Partida
 		@mazo.cantCartas
 	end
 
-	def getJugador
-		@jugador
+	def getJugador(jugadorNumero)
+		@jugadores[jugadorNumero]
+	end
+
+	def getCantidadJugadores
+		@jugadores.length
 	end
 end
