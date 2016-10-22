@@ -22,6 +22,7 @@ class Jugador
 	
 	def plantarse
 		@plantado = true
+		@activo = false
 	end
 
 	def estaPlantado

@@ -32,4 +32,14 @@ describe "Partida de BlackJack" do
 		partida.iniciarPartida
 		expect(partida.getJugador(0).estaActivo).to eq true
 	end
+
+	it "Se planta jugador 1 y se activa jugador 2" do
+		partida = Partida.new
+		partida.iniciarPartida
+		partida.plantarseJugadorActivo
+
+		expect(partida.getJugador(0).estaActivo).to eq false
+		expect(partida.getJugador(0).estaPlantado).to eq true
+		expect(partida.getJugador(1).estaActivo).to eq true
+	end
 end

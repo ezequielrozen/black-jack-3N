@@ -37,4 +37,11 @@ class Partida
 		@jugadores.length
 	end
 
+	def plantarseJugadorActivo
+		@jugadorActivo.plantarse
+		@jugadorActivo = @jugadores[1]
+		@jugadorActivo.activar
+
+	end
+
 end
