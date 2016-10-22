@@ -13,6 +13,12 @@ describe "Partida de BlackJack" do
 		expect(partida.cartasJugador(1).length).to eq 2
 	end
 
+	it "Se debe iniciar una nueva partida con dos jugadores" do 
+		partida = Partida.new
+		partida.iniciarPartida
+		expect(partida.getJugadores.length).to eq 2
+	end
+
 	it "si pide una nueva carta" do
 		partida = Partida.new
 		partida.iniciarPartida

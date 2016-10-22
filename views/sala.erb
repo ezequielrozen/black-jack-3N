@@ -2,37 +2,29 @@
 <link href="/sala.css" rel="stylesheet" type="text/css">
 </head>
 
-
-<div class="fondo">
+<body class="fondo">
 	<h1>Black Jack 3N</h1>
-	Cartas Jugador 1:
-	<div id="cartas-1">
-		<% @@partida.getJugador(1).cartasJugador.each_with_index do |carta, index| %>
-		<div id="carta-<%=index%>" class="carta"><%=carta%></div>
-		<% end %>
-	</div>
-	<div class="resultado">
-		Total: <%= @@partida.getJugador(1).scoreJugador %> 
-	</div>
-	<form method="POST" action="/jugador/carta/1">
-		<input id="pedir-carta" type="submit" value="Pedir carta"/>
-	</form>
-	<form method="POST" action="/jugador/plantarse/1">
-		<input id="plantarse" type="button" value="Plantarse"/>	
-	</form>
-	<div class="resultado">
-		Esta plantado?: <%= @@partida.getJugador(1).estaPlantado %> 
-	</div>
-	<hr>
+	<% @@partida.getJugadores.each_with_index do |jugador, index_jugador| %>
 
-	Cartas Jugador 2:
-	<div id="cartas-2">
-		<div class="carta" id="carta1">7</div>
-		<div class="carta" id="carta2">3</div>
-	</div>
-	<div class="resultado">
-		Total: X
-	</div>
-	<hr>
+		Cartas Jugador <%=index_jugador + 1%>:
+		<div id="cartas-<%=index_jugador + 1%>">
+			<% @@partida.getJugador(index_jugador).cartasJugador.each_with_index do |carta, index_carta| %>
+			<div id="carta-<%=index_carta + 1%>" class="carta"><%=carta%></div>
+			<% end %>
+		</div>
+		<div class="resultado">
+			Total: <%= @@partida.getJugador(index_jugador).scoreJugador %> 
+		</div>
+		<form method="POST" action="/jugador/carta/<%=index_jugador%>">
+			<input id="pedir-carta" type="submit" value="Pedir carta"/>
+		</form>
+		<form method="POST" action="/jugador/plantarse/<%=index_jugador%>">
+			<input id="plantarse" type="button" value="Plantarse"/>	
+		</form>
+		<div class="resultado">
+			Esta plantado?: <%= @@partida.getJugador(index_jugador).estaPlantado %> 
+		</div>
+		<hr>
+	<% end %>
 
-</div>
+</body>

@@ -34,6 +34,10 @@ class Partida
 		@jugadores[jugadorNumero]
 	end
 
+	def getJugadores
+		@jugadores
+	end
+
 	def getCantidadJugadores
 		@jugadores.length
 	end
