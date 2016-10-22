@@ -154,3 +154,12 @@ D, [2016-10-22T16:41:58.818708 #4935] DEBUG -- : REQUESTING PAGE: GET /sala with
 D, [2016-10-22T16:41:58.823315 #4935] DEBUG -- : REQUESTING PAGE: GET /sala with {} and HTTP headers {}
 D, [2016-10-22T16:41:58.834144 #4935] DEBUG -- : REQUESTING PAGE: GET /sala with {} and HTTP headers {}
 D, [2016-10-22T16:41:58.842067 #4935] DEBUG -- : REQUESTING PAGE: POST /jugador/carta/0 with {} and HTTP headers {"HTTP_REFERER"=>"/sala"}
+D, [2016-10-22T16:47:01.060593 #4998] DEBUG -- : REQUESTING PAGE: GET /sala with {} and HTTP headers {}
+D, [2016-10-22T16:47:01.074711 #4998] DEBUG -- : REQUESTING PAGE: GET /sala with {} and HTTP headers {}
+D, [2016-10-22T16:47:01.079075 #4998] DEBUG -- : REQUESTING PAGE: GET /sala with {} and HTTP headers {}
+D, [2016-10-22T16:47:01.083951 #4998] DEBUG -- : REQUESTING PAGE: GET /sala with {} and HTTP headers {}
+D, [2016-10-22T16:47:01.091531 #4998] DEBUG -- : REQUESTING PAGE: GET /sala with {} and HTTP headers {}
+D, [2016-10-22T16:47:01.096693 #4998] DEBUG -- : REQUESTING PAGE: POST /jugador/carta/0 with {} and HTTP headers {"HTTP_REFERER"=>"/sala"}
+D, [2016-10-22T16:47:01.104330 #4998] DEBUG -- : REQUESTING PAGE: GET /sala with {} and HTTP headers {}
+D, [2016-10-22T16:47:01.107985 #4998] DEBUG -- : REQUESTING PAGE: POST /jugador/carta/0 with {} and HTTP headers {"HTTP_REFERER"=>"/sala"}
+D, [2016-10-22T16:47:01.111494 #4998] DEBUG -- : REQUESTING PAGE: POST /jugador/carta/0 with {} and HTTP headers {"HTTP_REFERER"=>"/jugador/carta/0"}

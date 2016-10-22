@@ -37,3 +37,10 @@ Then(/^Ve la carta 3/) do
 	end
 end
 
+Then(/^Ve la carta 4/) do
+  	last_response.should have_xpath( "//div[@id=\"carta-4\"]") do |carta|
+        carta.should be
+	end
+end
+
+

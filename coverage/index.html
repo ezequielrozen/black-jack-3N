@@ -14,26 +14,26 @@
       <img src="./assets/0.7.1/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2016-10-22T16:41:58+02:00">2016-10-22T16:41:58+02:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2016-10-22T16:47:01+02:00">2016-10-22T16:47:01+02:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="red">77.67%</span></span>
+    (<span class="covered_percent"><span class="red">78.3%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.73
+         2.32
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>6</b> files in total.
-    <b>103</b> relevant lines. 
-    <span class="green"><b>80</b> lines covered</span> and
+    <b>106</b> relevant lines. 
+    <span class="green"><b>83</b> lines covered</span> and
     <span class="red"><b>23</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -57,17 +57,17 @@
         <td>12</td>
         <td>10</td>
         <td>2</td>
-        <td>1.2</td>
+        <td>1.6</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#43d416db8c028ab298eab80014165810a44cf70c" class="src_link" title="features/step_definitions/black_jack_steps.rb">features/step_definitions/black_jack_steps.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>39</td>
-        <td>18</td>
-        <td>18</td>
+        <td>46</td>
+        <td>21</td>
+        <td>21</td>
         <td>0</td>
-        <td>1.4</td>
+        <td>1.5</td>
       </tr>
       
       <tr>
@@ -87,7 +87,7 @@
         <td>21</td>
         <td>18</td>
         <td>3</td>
-        <td>3.8</td>
+        <td>5.6</td>
       </tr>
       
       <tr>
@@ -97,7 +97,7 @@
         <td>7</td>
         <td>6</td>
         <td>1</td>
-        <td>1.4</td>
+        <td>1.7</td>
       </tr>
       
       <tr>
@@ -107,7 +107,7 @@
         <td>27</td>
         <td>20</td>
         <td>7</td>
-        <td>2.2</td>
+        <td>3.1</td>
       </tr>
       
     </tbody>
@@ -182,8 +182,8 @@
           <code class="ruby">get &#39;/sala&#39; do</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="8">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="6" data-linenumber="8">
+          <span class="hits">6</span>
           
           <code class="ruby">    erb :sala</code>
         </li>
@@ -206,14 +206,14 @@
           <code class="ruby">post &#39;/jugador/carta/:id&#39; do |id|</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="12">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="3" data-linenumber="12">
+          <span class="hits">3</span>
           
           <code class="ruby">	@@partida.pedirCarta(id.to_i)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="13">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="3" data-linenumber="13">
+          <span class="hits">3</span>
           
           <code class="ruby">	erb :sala</code>
         </li>
@@ -263,8 +263,8 @@
     <h3>features/step_definitions/black_jack_steps.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>18</b> relevant lines. 
-      <span class="green"><b>18</b> lines covered</span> and
+      <b>21</b> relevant lines. 
+      <span class="green"><b>21</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -278,8 +278,8 @@
           <code class="ruby">Given(/^Usuario ingresa a la sala$/) do</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="2">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="6" data-linenumber="2">
+          <span class="hits">6</span>
           
           <code class="ruby">  visit &quot;/sala&quot;</code>
         </li>
@@ -452,8 +452,8 @@
           <code class="ruby">Then(/^Aprieta el boton &quot;(.*?)&quot;$/) do |value|</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="31">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="3" data-linenumber="31">
+          <span class="hits">3</span>
           
           <code class="ruby">  click_button(value)</code>
         </li>
@@ -501,6 +501,48 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="39">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="40">
+          <span class="hits">1</span>
+          
+          <code class="ruby">Then(/^Ve la carta 4/) do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="41">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  	last_response.should have_xpath( &quot;//div[@id=\&quot;carta-4\&quot;]&quot;) do |carta|</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="42">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        carta.should be</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="43">
+          
+          
+          <code class="ruby">	end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="44">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="45">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="46">
           
           
           <code class="ruby"></code>
@@ -836,8 +878,8 @@
           <code class="ruby">	def cartasJugador</code>
         </li>
       
-        <li class="covered" data-hits="12" data-linenumber="12">
-          <span class="hits">12</span>
+        <li class="covered" data-hits="18" data-linenumber="12">
+          <span class="hits">18</span>
           
           <code class="ruby">		@cartas</code>
         </li>
@@ -860,8 +902,8 @@
           <code class="ruby">	def pedirCarta(carta)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="16">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="3" data-linenumber="16">
+          <span class="hits">3</span>
           
           <code class="ruby">		@cartas.push(carta)</code>
         </li>
@@ -884,8 +926,8 @@
           <code class="ruby">	def scoreJugador</code>
         </li>
       
-        <li class="covered" data-hits="37" data-linenumber="20">
-          <span class="hits">37</span>
+        <li class="covered" data-hits="61" data-linenumber="20">
+          <span class="hits">61</span>
           
           <code class="ruby">		@scoreJugador = @cartas.inject(0){|sum,x| sum + x }</code>
         </li>
@@ -938,8 +980,8 @@
           <code class="ruby">	def estaPlantado</code>
         </li>
       
-        <li class="covered" data-hits="12" data-linenumber="29">
-          <span class="hits">12</span>
+        <li class="covered" data-hits="18" data-linenumber="29">
+          <span class="hits">18</span>
           
           <code class="ruby">		@plantado</code>
         </li>
@@ -1064,8 +1106,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="7">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="7" data-linenumber="7">
+          <span class="hits">7</span>
           
           <code class="ruby">	nuevaCarta = @mazoCartas.slice!(Random.rand(@mazoCartas.length)) </code>
         </li>
@@ -1256,8 +1298,8 @@
           <code class="ruby">	def pedirCarta(jugadorNumero)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="22">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="3" data-linenumber="22">
+          <span class="hits">3</span>
           
           <code class="ruby">		@jugadores[jugadorNumero].pedirCarta(@mazo.repartirCarta)</code>
         </li>
@@ -1328,8 +1370,8 @@
           <code class="ruby">	def getJugador(jugadorNumero)</code>
         </li>
       
-        <li class="covered" data-hits="36" data-linenumber="34">
-          <span class="hits">36</span>
+        <li class="covered" data-hits="54" data-linenumber="34">
+          <span class="hits">54</span>
           
           <code class="ruby">		@jugadores[jugadorNumero]</code>
         </li>
@@ -1352,8 +1394,8 @@
           <code class="ruby">	def getJugadores</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="38">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="9" data-linenumber="38">
+          <span class="hits">9</span>
           
           <code class="ruby">		@jugadores</code>
         </li>

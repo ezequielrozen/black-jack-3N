@@ -23,3 +23,10 @@ Scenario: El jugador 1 pide una carta
 	Then Aprieta el boton "Pedir carta"
 	And Ve la carta 3
 
+Scenario: El jugador 1 pide una segunda carta carta
+	Given Usuario ingresa a la sala
+	Then Aprieta el boton "Pedir carta"
+	And Aprieta el boton "Pedir carta"
+	And Ve la carta 4
+
+
