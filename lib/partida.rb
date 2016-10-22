@@ -5,11 +5,12 @@ class Partida
 	
 	def initialize 
 		@mazo = Mazo.new
-		
 	end
 
 	def iniciarPartida
 		@jugadores = [Jugador.new(@mazo.repartirCarta, @mazo.repartirCarta), Jugador.new(@mazo.repartirCarta, @mazo.repartirCarta)]
+		@jugadores[0].activar
+		@jugadorActivo = @jugadores[0]
 	end
 
 	def cartasJugador(jugadorNumero)
@@ -35,4 +36,5 @@ class Partida
 	def getCantidadJugadores
 		@jugadores.length
 	end
+
 end

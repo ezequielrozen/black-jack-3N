@@ -26,4 +26,10 @@ describe "Partida de BlackJack" do
 		partida.resetear
 		expect(partida.cantCartasMazo).to eq 52
 	end
+
+	it "Se inicia un turno" do
+		partida = Partida.new
+		partida.iniciarPartida
+		expect(partida.getJugador(0).estaActivo).to eq true
+	end
 end

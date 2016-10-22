@@ -4,6 +4,7 @@ class Jugador
 		@cartas = [carta1, carta2]
 		@scoreJugador = 0
 		@plantado = false
+		@activo = false
 
 	end
 
@@ -25,6 +26,14 @@ class Jugador
 
 	def estaPlantado
 		@plantado
+	end
+
+	def activar
+		@activo = true
+	end
+
+	def estaActivo
+		@activo
 	end
 	
 end
