@@ -31,14 +31,8 @@ Then(/^Aprieta el boton "(.*?)"$/) do |value|
   click_button(value)
 end
 
-Then(/^Ve la carta 3/) do
-  	last_response.should have_xpath( "//div[@id=\"carta-3\"]") do |carta|
-        carta.should be
-	end
-end
-
-Then(/^Ve la carta 4/) do
-  	last_response.should have_xpath( "//div[@id=\"carta-4\"]") do |carta|
+Then(/^Ve la carta (\d+)$/) do |numero_carta|
+  	last_response.should have_xpath( "//div[@id=\"carta-#{numero_carta}\"]") do |carta|
         carta.should be
 	end
 end

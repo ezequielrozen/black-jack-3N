@@ -14,26 +14,26 @@
       <img src="./assets/0.7.1/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2016-10-22T16:47:01+02:00">2016-10-22T16:47:01+02:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2016-10-22T16:57:15+02:00">2016-10-22T16:57:15+02:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="red">78.3%</span></span>
+    (<span class="covered_percent"><span class="red">77.67%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         2.32
+         2.35
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>6</b> files in total.
-    <b>106</b> relevant lines. 
-    <span class="green"><b>83</b> lines covered</span> and
+    <b>103</b> relevant lines. 
+    <span class="green"><b>80</b> lines covered</span> and
     <span class="red"><b>23</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -63,11 +63,11 @@
       <tr>
         <td class="strong"><a href="#43d416db8c028ab298eab80014165810a44cf70c" class="src_link" title="features/step_definitions/black_jack_steps.rb">features/step_definitions/black_jack_steps.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>46</td>
-        <td>21</td>
-        <td>21</td>
+        <td>40</td>
+        <td>18</td>
+        <td>18</td>
         <td>0</td>
-        <td>1.5</td>
+        <td>1.7</td>
       </tr>
       
       <tr>
@@ -263,8 +263,8 @@
     <h3>features/step_definitions/black_jack_steps.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>21</b> relevant lines. 
-      <span class="green"><b>21</b> lines covered</span> and
+      <b>18</b> relevant lines. 
+      <span class="green"><b>18</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -473,17 +473,17 @@
         <li class="covered" data-hits="1" data-linenumber="34">
           <span class="hits">1</span>
           
-          <code class="ruby">Then(/^Ve la carta 3/) do</code>
+          <code class="ruby">Then(/^Ve la carta (\d+)$/) do |numero_carta|</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="35">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="35">
+          <span class="hits">2</span>
           
-          <code class="ruby">  	last_response.should have_xpath( &quot;//div[@id=\&quot;carta-3\&quot;]&quot;) do |carta|</code>
+          <code class="ruby">  	last_response.should have_xpath( &quot;//div[@id=\&quot;carta-#{numero_carta}\&quot;]&quot;) do |carta|</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="36">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="36">
+          <span class="hits">2</span>
           
           <code class="ruby">        carta.should be</code>
         </li>
@@ -506,43 +506,7 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="40">
-          <span class="hits">1</span>
-          
-          <code class="ruby">Then(/^Ve la carta 4/) do</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="41">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  	last_response.should have_xpath( &quot;//div[@id=\&quot;carta-4\&quot;]&quot;) do |carta|</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="42">
-          <span class="hits">1</span>
-          
-          <code class="ruby">        carta.should be</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="43">
-          
-          
-          <code class="ruby">	end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="44">
-          
-          
-          <code class="ruby">end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="45">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="46">
+        <li class="never" data-hits="" data-linenumber="40">
           
           
           <code class="ruby"></code>
