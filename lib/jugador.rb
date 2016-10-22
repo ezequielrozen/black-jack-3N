@@ -17,7 +17,12 @@ class Jugador
 	end
 
 	def scoreJugador
-		@scoreJugador = @cartas.inject(0){|sum,x| sum + x }
+		@scoreJugador = @cartas.inject(0){|sum,x|
+			if (x > 10)
+				x = 10
+			end
+			sum + x 
+		}
 	end
 	
 	def plantarse
